@@ -174,3 +174,262 @@ input{
     margin-top: 20px;
    margin-left: -30px;
 }
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto';
+    width: 100%;
+}
+.landing-big {
+    display: flex;
+}
+.start {
+    width: 60%;
+    margin-top: 30px;
+}
+.start img {
+    width: 200px;
+    margin-left: 350px;
+}
+.start h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 370px;
+}
+
+.landing-img {
+    width: 550px;
+    height: 100vh;
+    background-image: url(web-images/imageye___-_imgi_5_bird.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.landing-img img {
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+}
+.make {
+    position: relative;
+    left: 300px;
+}   
+.google {
+    display: flex;    
+    border: 1px solid rgb(119, 114, 114); 
+    margin: auto;
+    width: 40%;
+    height: 40px;
+    justify-content: space-between;
+    border-color: rgb(231, 228, 228);
+    border-radius: 5px;
+    margin-top: 32px;
+}
+.google-img img {
+    margin-left: 10px;
+    width: 30px ;
+    margin-top: 5px;
+} 
+.google-cont {
+    margin: auto;
+}
+.google-cont a {
+    text-decoration: none;
+    color: rgb(39, 35, 35);
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.google-cont p {
+    margin-left: -20px;
+}
+.lines {
+    width: 150px;
+    height: 0.5px;
+    background-color: rgb(225, 220, 220);
+    margin-top: 10px;
+}
+input {
+    height: 40px;
+    width: 370px;
+    justify-self: center;
+    font-size: 16px;
+    align-items: center;
+    padding: 20px;
+    margin-top: 25px;
+}
+.inn {
+    margin-left: 270px;
+    margin-top: 10px;
+}
+
+.line-box {
+    display: flex;
+    gap: 10px;
+    margin-left: 280px;
+    margin-top: 20px;
+}
+
+.nn {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+.rm-nn {
+    margin-top: -20px;
+    gap: 10px;
+}
+.rm-nn p {
+    font-size: 17px;
+}
+.rnn01 {
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    margin-top: 40px;
+}
+.btn {
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    color: rgb(23, 114, 235);
+    cursor: pointer;
+}
+.btn:hover {
+    text-decoration: underline;
+}
+.log {
+    margin-top: 30px;
+    width: 390px;
+    height: 50px;
+    background-color: rgb(23, 114, 235);
+    border: 1px solid rgb(23, 114, 235);
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.line {
+    width: 390px;
+    border: 1px light rgb(149, 147, 147);
+    margin-top: 10px;
+    justify-self: center;
+}
+.acct {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+.acct span {
+    color: rgb(23, 114, 235);
+    cursor: pointer;
+}
+.acct:hover span {
+    text-decoration: underline;
+}
+.acimg img {
+    width: 300px;
+}
+.acimg {
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+
+/* =======================================================
+   MEDIA QUERIES FOR TABLETS AND MOBILE PHONES
+   ======================================================= */
+
+/* 1. TABLETS (1024px and down) */
+@media screen and (max-width: 1024px) {
+    .start {
+        width: 55%;
+    }
+    .landing-img {
+        width: 45%;
+    }
+}
+
+/* 2. PHONES & SMALL TABLETS (768px and down) */
+@media screen and (max-width: 768px) {
+    .landing-big {
+        flex-direction: column;
+    }
+
+    .start {
+        width: 100%;
+        margin-top: 10px;
+        padding: 0 20px;
+    }
+
+    /* Reset desktop left-margin shifts */
+    .start img,
+    .start h2,
+    .inn,
+    .line-box {
+        margin-left: 0 !important;
+    }
+
+    .landing-img {
+        display: none !important;
+    }
+
+    .google,
+    input,
+    .log,
+    .line,
+    .line-box,
+    .inn {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .rnn01 {
+        gap: 20px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .acimg {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* 3. SMALL PHONES (480px and down) */
+@media screen and (max-width: 480px) {
+    .start {
+        padding: 0 15px;
+    }
+    
+    .start h2 {
+        font-size: 20px;
+    }
+
+    .rnn01 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
